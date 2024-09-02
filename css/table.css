@@ -1,0 +1,95 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100svh;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    font-family: system-ui;
+}
+
+/* hide radio button */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.wrapper {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer {
+    margin-top: auto;
+    padding: 2rem;
+    background-color: #111;
+}
+
+/* full height on the drawers container */
+.drawers {
+    flex: 1;
+    border: 1px solid #ffffff20;
+    background-color: #00000020;
+}
+
+.drawer {
+    display: none;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0px;
+    /* set height to 0 - this will be modified when radio checkbox checked*/
+    transition: grid-template-rows 1000ms cubic-bezier(.47, 1.64, .41, .8);
+}
+
+input:checked+label+.drawer {
+    --content-height: 500px;
+    grid-template-rows: var(--content-height, auto);
+}
+
+input:checked+label>span {
+    rotate: 90deg;
+}
+
+.drawer-content {
+    overflow-y: auto;
+    border-bottom: 1px solid #ffffff30;
+}
+
+label {
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    background-color: #00000030;
+    display: flex;
+    gap: 0.75rem;
+}
+
+label>span {
+    transition: rotate 300ms;
+}
+
+p {
+    padding: 7px 15px;
+    margin-bottom: 0;
+    background-color: white;
+    color: black;
+}
+
+input[type="checkbox"]:checked+.drawer-label+.drawer {
+    display: block;
+}

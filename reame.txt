@@ -1,0 +1,15 @@
+https://github.com/YoYogesh8198/cruiseCheck.git   == quick setup
+
+
+git remote add origin https://github.com/YoYogesh8198/cruiseCheck.git
+git branch -M main
+git push -u origin main
+
+
+echo "# cruiseCheck" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/YoYogesh8198/cruiseCheck.git
+git push -u origin main

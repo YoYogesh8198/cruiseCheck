@@ -1,0 +1,122 @@
+[
+    {
+        "departurePort": "AL - Mobile"
+    },
+    {
+        "departurePort": "CA - LA/Long Beach"
+    },
+    {
+        "departurePort": "CA - LA/San Pedro"
+    },
+    {
+        "departurePort": "CA - San Diego"
+    },
+    {
+        "departurePort": "CA - San Francisco"
+    },
+    {
+        "departurePort": "FL - Ft. Lauderdale"
+    },
+    {
+        "departurePort": "FL - Jacksonville"
+    },
+    {
+        "departurePort": "FL - Miami"
+    },
+    {
+        "departurePort": "FL - Port Canaveral"
+    },
+    {
+        "departurePort": "FL - Tampa"
+    },
+    {
+        "departurePort": "HI - Honolulu/Oahu"
+    },
+    {
+        "departurePort": "LA - New Orleans"
+    },
+    {
+        "departurePort": "MA - Boston"
+    },
+    {
+        "departurePort": "MD - Baltimore"
+    },
+    {
+        "departurePort": "NY - Bayonne/New Jersey"
+    },
+    {
+        "departurePort": "NY - Brooklyn"
+    },
+    {
+        "departurePort": "NY - New York"
+    },
+    {
+        "departurePort": "SC - Charleston"
+    },
+    {
+        "departurePort": "TX - Galveston"
+    },
+    {
+        "departurePort": "Argentina - Buenos Aires"
+    },
+    {
+        "departurePort": "Barbados - Bridgetown"
+    },
+    {
+        "departurePort": "Chile - Valparaiso"
+    },
+    {
+        "departurePort": "England - Southampton"
+    },
+    {
+        "departurePort": "France - Paris"
+    },
+    {
+        "departurePort": "Germany - Nuremberg"
+    },
+    {
+        "departurePort": "Greece - Piraeus/Athens"
+    },
+    {
+        "departurePort": "Hong Kong"
+    },
+    {
+        "departurePort": "Hungary - Budapest"
+    },
+    {
+        "departurePort": "Italy - Rome/Civitavecchia"
+    },
+    {
+        "departurePort": "Italy - Venice"
+    },
+    {
+        "departurePort": "Netherlands - Amsterdam"
+    },
+    {
+        "departurePort": "Norway - Bergen"
+    },
+    {
+        "departurePort": "Portugal - Lisbon"
+    },
+    {
+        "departurePort": "Puerto Rico - San Juan"
+    },
+    {
+        "departurePort": "Spain - Barcelona"
+    },
+    {
+        "departurePort": "St. Maarten - Philipsburg"
+    },
+    {
+        "departurePort": "Switzerland - Basel"
+    },
+    {
+        "departurePort": "Tahiti - Papeete"
+    },
+    {
+        "departurePort": "Turkey - Istanbul"
+    },
+    {
+        "departurePort": "U.A.E. - Dubai"
+    }
+]

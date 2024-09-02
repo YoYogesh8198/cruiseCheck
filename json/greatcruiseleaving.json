@@ -1,0 +1,34 @@
+[
+  {
+    "img": "images/greatleaving/cruise-ports/amsterdam.jpg",
+    "title": "Amsterdam"
+  },
+  {
+    "img": "images/greatleaving/cruise-ports/barcelona.jpg",
+    "title": "Barcelona"
+  },
+  {
+    "img": "images/greatleaving/cruise-ports/copenhagen.jpg",
+    "title": "Copenhagen"
+  },
+  {
+    "img": "images/greatleaving/cruise-ports/Istanbul.jpg",
+    "title": "Istanbul"
+  },
+  {
+    "img": "images/greatleaving/cruise-ports/miami.jpg",
+    "title": "Miami"
+  },
+  {
+    "img": "images/greatleaving/cruise-ports/rome1.jpg",
+    "title": "Rome"
+  },
+  {
+    "img": "images/greatleaving/cruise-ports/beunos-bires-1.jpg",
+    "title": "Beunos Aires"
+  },
+  {
+    "img": "images/greatleaving/cruise-ports/stockholm.jpg",
+    "title": "Stockholm"
+  }
+]
