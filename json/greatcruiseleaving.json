@@ -1,34 +1,42 @@
 [
   {
     "img": "images/greatleaving/cruise-ports/amsterdam.jpg",
-    "title": "Amsterdam"
+    "title": "Amsterdam",
+    "description": "Known for its charming canals, vibrant culture, and historic architecture, Amsterdam offers a unique blend of old-world charm and modern sophistication."
   },
   {
     "img": "images/greatleaving/cruise-ports/barcelona.jpg",
-    "title": "Barcelona"
+    "title": "Barcelona",
+    "description": "Famous for its stunning Gaudí architecture, lively markets, and beautiful beaches, Barcelona is a city that perfectly blends art, history, and Mediterranean charm."
   },
   {
     "img": "images/greatleaving/cruise-ports/copenhagen.jpg",
-    "title": "Copenhagen"
+    "title": "Copenhagen",
+    "description": "With its picturesque harbor, colorful buildings, and rich Viking history, Copenhagen is a delightful destination known for its relaxed atmosphere and modern design."
   },
   {
     "img": "images/greatleaving/cruise-ports/Istanbul.jpg",
-    "title": "Istanbul"
+    "title": "Istanbul",
+    "description": "Straddling two continents, Istanbul offers a captivating mix of Eastern and Western cultures, with its stunning mosques, bustling bazaars, and rich historical heritage."
   },
   {
     "img": "images/greatleaving/cruise-ports/miami.jpg",
-    "title": "Miami"
+    "title": "Miami",
+    "description": "Renowned for its vibrant nightlife, beautiful beaches, and diverse culture, Miami is a dynamic city where the fun never stops and the tropical weather is always inviting."
   },
   {
     "img": "images/greatleaving/cruise-ports/rome1.jpg",
-    "title": "Rome"
+    "title": "Rome",
+    "description": "The Eternal City is a treasure trove of ancient history, from the Colosseum to the Vatican, offering visitors a chance to walk through time amidst stunning architecture and art."
   },
   {
     "img": "images/greatleaving/cruise-ports/beunos-bires-1.jpg",
-    "title": "Beunos Aires"
+    "title": "Buenos Aires",
+    "description": "Often referred to as the 'Paris of South America,' Buenos Aires is known for its European-style architecture, tango music, and rich culinary scene."
   },
   {
     "img": "images/greatleaving/cruise-ports/stockholm.jpg",
-    "title": "Stockholm"
+    "title": "Stockholm",
+    "description": "Spread across 14 islands, Stockholm combines natural beauty with modern elegance, featuring scenic waterways, historic sites, and a thriving cultural scene."
   }
 ]

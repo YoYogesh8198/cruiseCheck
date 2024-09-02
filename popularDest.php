@@ -25,11 +25,10 @@ $greatcruiseleaving_cursor = $m->greatcruiseleaving(["_id" => ['$ne' => null]], 
 </div>
 
 <!-- deaprture Port -->
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-md-12 top_heading3">Departure Port with Great Cruises Leaving From</div>
     </div>
-    <!-- Slider -->
     <div class="carousel-container">
         <div id="new-slider2" class="owl-carousel owl-theme">
             <?php foreach ($greatcruiseleaving_cursor as $bestDepartData): ?>
@@ -44,25 +43,39 @@ $greatcruiseleaving_cursor = $m->greatcruiseleaving(["_id" => ['$ne' => null]], 
             <?php endforeach ?>
         </div>
     </div>
-</div>
+</div> -->
 
-
-<div class="container">
+<!-- <div class="container">
     <div class="row">
-        <div class="col-md-12 top_heading3">Our Best Ports</div>
+        <div class="col-md-12 top_heading3">Departure Port with Great Cruises Leaving From</div>
     </div>
-    <!-- Slider -->
-    <div class="img-carousel">
-        <?php foreach ($popularDestination_cursor as $popularCruise): ?>
-            <div class="carousel-item1">
-                <div class="carousel-box">
-                    <div class="title"><?php echo $popularCruise["title"]; ?></div>
-                    <div class="num"><?php echo $popularCruise["number"]; ?></div>
-                    <img src="<?php echo $popularCruise["img"]; ?>" />
+    <section class="game-section">
+        <div class="owl-carousel custom-carousel owl-theme">
+            <?php foreach ($greatcruiseleaving_cursor as $bestDepartData): ?>
+                <div class="item active" style="background-image: url(<?php echo $bestDepartData["img"]; ?>);">
+                    <div class="item-desc">
+                        <h3><?php echo $bestDepartData["title"]; ?></h3>
+                        <p><?php echo $bestDepartData["description"]; ?></p>
+                    </div>
                 </div>
+            <?php endforeach ?>
+        </div>
+    </section>
+</div> -->
+
+<!-- <div class="row">
+    <div class="col-md-12 top_heading3">Our Best Ports</div>
+</div>
+<div class="img-carousel">
+    <?php foreach ($popularDestination_cursor as $popularCruise): ?>
+        <div class="carousel-item1">
+            <div class="carousel-box">
+                <div class="title"><?php echo $popularCruise["title"]; ?></div>
+                <div class="num"><?php echo $popularCruise["number"]; ?></div>
+                <img src="<?php echo $popularCruise["img"]; ?>" />
             </div>
-        <?php endforeach ?>
-    </div>
+        </div>
+    <?php endforeach ?>
     <div class="cursor"></div>
     <div class="cursor cursor2"></div>
-</div>
+</div> -->

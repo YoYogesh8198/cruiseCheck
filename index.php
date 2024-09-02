@@ -18,6 +18,10 @@ $num = mt_rand(100000, 999999);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="css/bootstrap.min.css?v=0.0.01" rel="stylesheet">
     <link href="css/bootstrap-select.min.css?v=0.0.07" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Owl Carousel Default Theme CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
     <style>
         .tble_titie td {
@@ -48,8 +52,12 @@ $num = mt_rand(100000, 999999);
             <?php include_once 'enquiry.php' ?>
             <!-- top cruise -->
             <?php include_once 'topCruiseLine.php' ?>
+            <!-- new component -->
+            <?php include_once 'middlepart.php' ?>
             <!-- popularDest -->
             <?php include_once 'popularDest.php' ?>
+            <!-- DeparturePort.php -->
+            <?php include_once 'DeparturePort.php' ?>
             <!-- F & Q -->
             <?php include_once 'F&Q.php' ?>
             <!-- footer -->
@@ -67,10 +75,23 @@ $num = mt_rand(100000, 999999);
     <script src="js/customDate.js?v=0.0.04"></script>
     <script src="js/validation.js?v=0.0.06"></script>
     <script src="js/bootstrap-select.min.js?v=0.0.01"></script>
-    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script> -->
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
     <script>
+
+
+        $(document).ready(function () {
+            $(".custom-carousel").owlCarousel({
+                autoWidth: true,
+                loop: false
+            });
+            $(".custom-carousel .item").click(function () {
+                $(".custom-carousel .item").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+            });
+        });
         // !Script for sidebar nav start
         $(window).resize(function () {
             if ($(window).width() < 768) {
