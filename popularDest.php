@@ -45,3 +45,24 @@ $greatcruiseleaving_cursor = $m->greatcruiseleaving(["_id" => ['$ne' => null]], 
         </div>
     </div>
 </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 top_heading3">Our Best Ports</div>
+    </div>
+    <!-- Slider -->
+    <div class="img-carousel">
+        <?php foreach ($popularDestination_cursor as $popularCruise): ?>
+            <div class="carousel-item1">
+                <div class="carousel-box">
+                    <div class="title"><?php echo $popularCruise["title"]; ?></div>
+                    <div class="num"><?php echo $popularCruise["number"]; ?></div>
+                    <img src="<?php echo $popularCruise["img"]; ?>" />
+                </div>
+            </div>
+        <?php endforeach ?>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor cursor2"></div>
+</div>
