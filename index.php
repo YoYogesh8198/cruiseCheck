@@ -111,16 +111,12 @@ $num = mt_rand(100000, 999999);
                 mouseDrag: false, // Disable mouse dragging on desktop
                 responsive: {
                     0: {
-                        items: 3, 
-                        mouseDrag: false 
+                        items: 2, // Show 1 item on small screens
+                        mouseDrag: false // Enable mouse dragging on mobile
                     },
                     600: {
-                        items: 3, 
-                        mouseDrag: false 
-                    },
-                    991:{
-                        items: 2, 
-                        mouseDrag: false 
+                        items: 2, // Show 2 items on medium and larger screens
+                        mouseDrag: false // Disable mouse dragging on larger screens
                     }
                 }
             });
