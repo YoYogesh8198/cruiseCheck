@@ -3328,18 +3328,18 @@ input[type="checkbox"]:checked {
   }
 
   /* -------- Landing page ------- */
-  .game-section {
+  /* .game-section {
     padding: 50px 30px;
-  }
+  } */
 
   .game-section .item {
-    margin: 0 12px 60px;
+    margin: 0 12px 15px;
     width: 260px;
     height: 360px;
   }
 
   .game-section .item.active {
-    width: 400px;
+    width: 550px;
   }
 
   .game-section .item-desc {

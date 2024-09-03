@@ -107,16 +107,20 @@ $num = mt_rand(100000, 999999);
                 items: 2, // Show two items at a time
                 loop: true, // Enable looping
                 nav: false, // Disable default navigation
-                margin: 20, // Add margin between items
+                margin: 350, // Add margin between items
                 mouseDrag: false, // Disable mouse dragging on desktop
                 responsive: {
                     0: {
-                        items: 1, // Show 1 item on small screens
-                        mouseDrag: true // Enable mouse dragging on mobile
+                        items: 3, 
+                        mouseDrag: false 
                     },
                     600: {
-                        items: 2, // Show 2 items on medium and larger screens
-                        mouseDrag: false // Disable mouse dragging on larger screens
+                        items: 3, 
+                        mouseDrag: false 
+                    },
+                    991:{
+                        items: 2, 
+                        mouseDrag: false 
                     }
                 }
             });
