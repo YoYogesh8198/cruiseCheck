@@ -22,5 +22,9 @@ $greatcruiseleaving_cursor = $m->greatcruiseleaving(["_id" => ['$ne' => null]], 
                 </div>
             <?php endforeach ?>
         </div>
+        <nav class='nav1'>
+            <ion-icon class='btn1 prev1' name='arrow-back-outline'></ion-icon>
+            <ion-icon class='btn1 next1' name='arrow-forward-outline'></ion-icon>
+        </nav>
     </section>
 </div>

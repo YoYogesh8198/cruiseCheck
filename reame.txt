@@ -13,3 +13,6 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/YoYogesh8198/cruiseCheck.git
 git push -u origin main
+
+
+// mujhe isme ye karna hai phle check krna hai konsa item active hai agar vo screen par hai or active hai to okay hai or agr agr vo show nahi ho rha or active hai to remove krdo or ye add krna hai starting me 1st wala active ho or agr next button pr click kre to next wala active ho jaye same prev button k liye 

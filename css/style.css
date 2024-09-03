@@ -3047,6 +3047,10 @@ input[type="checkbox"]:checked {
 }
 
 
+.toast {
+  border-radius: 5px !important;
+  border: none !important;
+}
 
 .toast-container {
   position: absolute;
@@ -3055,6 +3059,7 @@ input[type="checkbox"]:checked {
   background-color: #23527cab !important;
   color: white;
   display: none;
+  border-radius: 5px !important;
 }
 
 
@@ -3236,15 +3241,15 @@ input[type="checkbox"]:checked {
 }
 
 .game-section .item {
-  margin: 0 15px 60px ;
+  margin: 0 15px 15px;
   width: 300px;
-  height: 400px ;
-  display: flex ;
-  display: -webkit-flex ;
+  height: 350px;
+  display: flex;
+  display: -webkit-flex;
   align-items: flex-end;
   -webkit-align-items: flex-end;
   background: #343434 no-repeat center center / cover;
-  border-radius: 16px ;
+  border-radius: 16px;
   overflow: hidden;
   position: relative;
   transition: all 0.4s ease-in-out;
@@ -3253,9 +3258,9 @@ input[type="checkbox"]:checked {
 }
 
 .game-section .item.active {
-  width: 500px;
-  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  width: 650px;
+  box-shadow: 12px 40px 40px rgba(124, 124, 124, 0.096);
+  -webkit-box-shadow: 12px 40px 40px rgba(124, 124, 124, 0.096);
 }
 
 .game-section .item:after {
@@ -3270,6 +3275,7 @@ input[type="checkbox"]:checked {
 }
 
 .game-section .item-desc {
+  margin-bottom: 10px;
   padding: 0 24px 12px;
   color: #fff;
   position: relative;
@@ -3419,4 +3425,31 @@ input[type="checkbox"]:checked {
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
   }
+}
+
+
+.game-section .nav1 {
+  position: relative;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game-section .nav1 .btn1 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+  border: 2px solid rgba(0, 0, 0, 0.6) !important;
+  margin: 0 0.25rem !important;
+  padding: 0.75rem !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+}
+
+.game-section .nav1 .btn1:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }

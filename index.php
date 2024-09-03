@@ -82,16 +82,75 @@ $num = mt_rand(100000, 999999);
     <script>
 
 
+        // $(document).ready(function () {
+        //     $(".custom-carousel").owlCarousel({
+        //         autoWidth: true,
+        //         loop: false,
+        //         // nav: true,
+        //     });
+        //     $(".custom-carousel .item").click(function () {
+        //         $(".custom-carousel .item").not($(this)).removeClass("active");
+        //         $(this).toggleClass("active");
+        //     });
+        //     $('.prev1').click(function () {
+        //         $(".custom-carousel").trigger('prev.owl.carousel');
+
+        //     })
+        //     $('.next1').click(function () {
+        //         $(".custom-carousel").trigger('next.owl.carousel');
+        //     })
+        // });
+
         $(document).ready(function () {
-            $(".custom-carousel").owlCarousel({
-                autoWidth: true,
-                loop: false
+            var $carousel = $(".custom-carousel");
+            $carousel.owlCarousel({
+                items: 2, // Show two items at a time
+                loop: true, // Enable looping
+                nav: false, // Disable default navigation
+                margin: 20, // Add margin between items
+                mouseDrag: false, // Disable mouse dragging on desktop
+                responsive: {
+                    0: {
+                        items: 1, // Show 1 item on small screens
+                        mouseDrag: true // Enable mouse dragging on mobile
+                    },
+                    600: {
+                        items: 2, // Show 2 items on medium and larger screens
+                        mouseDrag: false // Disable mouse dragging on larger screens
+                    }
+                }
             });
-            $(".custom-carousel .item").click(function () {
-                $(".custom-carousel .item").not($(this)).removeClass("active");
-                $(this).toggleClass("active");
+
+            // Function to update active class
+            function updateActiveClass() {
+                $('.custom-carousel .item').removeClass('active');
+                var currentIndex = $carousel.find('.owl-item.active').index();
+                $carousel.find('.item').eq(currentIndex).addClass('active');
+            }
+
+            // Initial setup: set the first item as active
+            updateActiveClass();
+
+            // Go to the previous item
+            $('.prev1').click(function () {
+                $carousel.trigger('prev.owl.carousel');
+                updateActiveClass();
+            });
+
+            // Go to the next item
+            $('.next1').click(function () {
+                $carousel.trigger('next.owl.carousel');
+                updateActiveClass();
+            });
+
+            // Listen for the 'changed' event to update active class
+            $carousel.on('changed.owl.carousel', function (event) {
+                updateActiveClass();
             });
         });
+
+
+
         // !Script for sidebar nav start
         $(window).resize(function () {
             if ($(window).width() < 768) {
